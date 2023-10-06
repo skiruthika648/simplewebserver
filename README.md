@@ -62,6 +62,9 @@ httpd.serve_forever()
 ## OUTPUT:
 ![ex1](https://github.com/skiruthika648/simplewebserver/assets/128348968/b5e78b7f-bee4-4c78-99cb-c1c539738923)
 
+![e1](https://github.com/skiruthika648/simplewebserver/assets/128348968/ff313792-c427-434a-913a-9441c154b909)
+
+
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
