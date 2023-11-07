@@ -30,40 +30,36 @@ content = """
 <title>My webserver</title>
 </head>
 <body>
-<h1>Top 5 Revenue Generating Companies<h1>
-<UL TYPE=“circle”>
-<LI> Infosys </LI>		
-<LI> Amazon </LI>
-<LI> Deloitte </LI>
-<LI> Mphasis </LI>
-<LI> Vitol </LI>
-</UL>
+<h1>Top five Revenue generating Software Companies</h1>
+<ol>
+<li>Microsoft</li>
+<li>Oracle</li>
+<li>Salesforce</li>
+<li>IBM</li>
+<li>Intuit</li>
+</ol>
 </body>
 </html>
-```
-## README.md
-```
+
 class myhandler(BaseHTTPRequestHandler):
-def do_GET(self):
-print("request received")
-self.send_response(200)
-self.send_header('content-type', 'text/html; charset=utf-8')
-self.end_headers()
-self.wfile.write(content.encode())
-server_address = ('',8000)
+    def do_GET(self):
+        print("request received")
+        self.send_response(200)
+        self.send_header('content-type', 'text/html; charset=utf-8')
+        self.end_headers()
+        self.wfile.write(content.encode())
+server_address = ('',8004)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
-
 httpd.serve_forever()
+
 ```
 
 
 
 ## OUTPUT:
-![ex1](https://github.com/skiruthika648/simplewebserver/assets/128348968/b5e78b7f-bee4-4c78-99cb-c1c539738923)
-
-![e1](https://github.com/skiruthika648/simplewebserver/assets/128348968/ff313792-c427-434a-913a-9441c154b909)
-
+![kweb2](https://github.com/skiruthika648/simplewebserver/assets/128348968/19b3be90-d671-450c-81a3-770d5cdb6714)
+![kweb1](https://github.com/skiruthika648/simplewebserver/assets/128348968/b548c2e1-ae28-4ce3-aa65-7b929645ef4a)
 
 
 ## RESULT:
